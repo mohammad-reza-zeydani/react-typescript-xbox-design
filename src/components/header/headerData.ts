@@ -1,6 +1,6 @@
-import xboxLogo from "../../assets/xboxLogo.png"
-import microsoftLogo from "../../assets/MicrosoftLogo.png"
-import headerPic from "../../assets/headerPic.jpg"
+import xboxLogo from "../../assets/xboxLogo.png";
+import microsoftLogo from "../../assets/MicrosoftLogo.png";
+import headerPic from "../../assets/headerPic.jpg";
 export const NavBtnsData = [
   {
     title: "Game Pass",
@@ -13,6 +13,7 @@ export const NavBtnsData = [
       "Deals with Game Pass",
       "Xbox Cloud Gaming",
     ],
+    large: false,
   },
   {
     title: "Games",
@@ -26,6 +27,7 @@ export const NavBtnsData = [
       "Sales & Specials",
       "Redeem Code",
     ],
+    large: false,
   },
   {
     title: "Devices",
@@ -58,10 +60,12 @@ export const NavBtnsData = [
         titleBtns: ["Gaming PCs"],
       },
     ],
+    large:true
   },
   {
     title: "Play",
     btns: [""],
+    large:false
   },
   {
     title: "Store",
@@ -72,6 +76,41 @@ export const NavBtnsData = [
       "Shop Accessories",
       "Shop Deals",
     ],
+    large: false,
+  },
+  {
+    title: "Community",
+    btns: [
+      {
+        btnsTitle: "Community",
+        titleBtns: ["Xbox community", "FanFest", "Xbox News", "Sustainability"],
+      },
+      {
+        btnsTitle: "For Everyone",
+        titleBtns: [
+          "Our ",
+          "Family hub",
+          "Accessible gaming",
+          "Community standards",
+        ],
+      },
+      {
+        btnsTitle: "Xbox Gear Shop",
+        titleBtns: ["Shop gear"],
+      },
+      {
+        btnsTitle: "Apps & Entertainment",
+        titleBtns: [
+          " Xbox app on mobile",
+          " Xbox app on Windows PC",
+          " Xbox app on TVs",
+          " Xbox Game Pass mobile app",
+          "Xbox Family Settings app",
+          "Console entertainment apps",
+        ],
+      },
+    ],
+    large:true
   },
   {
     title: "Support",
@@ -94,6 +133,7 @@ export const NavBtnsData = [
           "Games & apps",
           "Friends & social activity",
         ],
+        large: false,
       },
       {
         btnsTitle: "Accessible gaming",
@@ -104,6 +144,8 @@ export const NavBtnsData = [
         titleBtns: [""],
       },
     ],
+    large:false,
+    extraMenu:true
   },
   {
     title: "More",
@@ -117,6 +159,8 @@ export const NavBtnsData = [
         titleBtns: ["Games", "Designed for Xbox"],
       },
     ],
+    large:false,
+    extraMenu:true
   },
 ];
 export const AllMicrosoft = [
@@ -207,8 +251,8 @@ export const AllMicrosoft = [
     ],
   },
 ];
-export const Images={
-    xboxLogo,
-    microsoftLogo,
-    headerPic
-}
+export const Images = {
+  xboxLogo,
+  microsoftLogo,
+  headerPic,
+};
