@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+    .navBar-menu {
+        @apply z-20 bg-neutral-100 border-t-2 border-b-[3px] border-t-neutral-200 border-b-black absolute top-full shadow-xl  invisible opacity-0 group-hover:opacity-100 group-hover:visible transition-all delay-75
+    }
+    .link-border {
+        @apply w-full border border-dashed border-neutral-100 hover:border-neutral-200 active:border-black 
+    }
+    .text-border {
+        @apply group-hover/border:border-b border-black
+    }
+}

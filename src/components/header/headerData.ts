@@ -1,7 +1,56 @@
 import xboxLogo from "../../assets/xboxLogo.png";
 import microsoftLogo from "../../assets/MicrosoftLogo.png";
 import headerPic from "../../assets/headerPic.jpg";
-export const NavBtnsData = [
+//Data of the title and btns we have in our navigation 
+export const NavBtnsData= [
+  {
+    title: "Support",//the first title we see in navigation bar
+    extraBtns: [
+      {
+        btnsTitle: "Support home", //the title we have for our btns
+        titleBtns:[],//btns under our title
+      },
+      {
+        btnsTitle: "Xbox status",
+        titleBtns: [],
+      },
+      {
+        btnsTitle: "Help topics",
+        titleBtns: [
+          "Account & profile",
+          "Subscriptions & billing",
+          "Hardware & networking",
+          "Family & online safety",
+          "Games & apps",
+          "Friends & social activity",
+        ],
+        
+      },
+      {
+        btnsTitle: "Accessible gaming",
+        titleBtns: [],
+      },
+      {
+        btnsTitle: "Xbox system updates",
+        titleBtns: [],
+      },
+    ],
+    extraMenu:true
+  },
+  {
+    title: "More",
+    extraBtns: [
+      {
+        btnsTitle: "My Xbox",
+        titleBtns: ["Profile", "Rewards", "Xbox Mastercard", "Wish list"],
+      },
+      {
+        btnsTitle: "Developers",
+        titleBtns: ["Games", "Designed for Xbox"],
+      },
+    ],
+    extraMenu:true
+  },
   {
     title: "Game Pass",
     btns: [
@@ -31,7 +80,7 @@ export const NavBtnsData = [
   },
   {
     title: "Devices",
-    btns: [
+    extraBtns: [
       {
         btnsTitle: "Cosoles",
         titleBtns: [
@@ -63,11 +112,6 @@ export const NavBtnsData = [
     large:true
   },
   {
-    title: "Play",
-    btns: [""],
-    large:false
-  },
-  {
     title: "Store",
     btns: [
       "Shop Games",
@@ -80,7 +124,7 @@ export const NavBtnsData = [
   },
   {
     title: "Community",
-    btns: [
+    extraBtns: [
       {
         btnsTitle: "Community",
         titleBtns: ["Xbox community", "FanFest", "Xbox News", "Sustainability"],
@@ -88,7 +132,7 @@ export const NavBtnsData = [
       {
         btnsTitle: "For Everyone",
         titleBtns: [
-          "Our ",
+          "Our philosophy",
           "Family hub",
           "Accessible gaming",
           "Community standards",
@@ -112,61 +156,11 @@ export const NavBtnsData = [
     ],
     large:true
   },
-  {
-    title: "Support",
-    btns: [
-      {
-        btnsTitle: "Support home",
-        titleBtns: [""],
-      },
-      {
-        btnsTitle: "Xbox status",
-        titleBtns: [""],
-      },
-      {
-        btnsTitle: "Help topics",
-        titleBtns: [
-          "Account & profile",
-          "Subscriptions & billing",
-          "Hardware & networking",
-          "Family & online safety",
-          "Games & apps",
-          "Friends & social activity",
-        ],
-        large: false,
-      },
-      {
-        btnsTitle: "Accessible gaming",
-        titleBtns: [""],
-      },
-      {
-        btnsTitle: "Xbox system updates",
-        titleBtns: [""],
-      },
-    ],
-    large:false,
-    extraMenu:true
-  },
-  {
-    title: "More",
-    btns: [
-      {
-        btnsTitle: "My Xbox",
-        titleBtns: ["Profile", "Rewards", "Xbox Mastercard", "Wish list"],
-      },
-      {
-        btnsTitle: "Developers",
-        titleBtns: ["Games", "Designed for Xbox"],
-      },
-    ],
-    large:false,
-    extraMenu:true
-  },
 ];
-export const AllMicrosoft = [
+export const AllMicrosoft= [
   {
     mainTitle: "All Microsoft",
-    titles: [
+    links: [
       "Microsoft 365",
       "Teams",
       "Windows",
