@@ -1,9 +1,9 @@
 export type TBtnObject ={
-    btnsTitle:string,
-    titleBtns:Array<string>
+    title:string,
+    buttons:Array<string>
 }
 export type TNavBtnsData= {
-    title:string
+    mainTitle:string
     btns?:Array<string>
     extraBtns?:TBtnObject[]
     large?:boolean,

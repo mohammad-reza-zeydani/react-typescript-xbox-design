@@ -4,19 +4,19 @@ import headerPic from "../../assets/headerPic.jpg";
 //Data of the title and btns we have in our navigation 
 export const NavBtnsData= [
   {
-    title: "Support",//the first title we see in navigation bar
+    mainTitle: "Support",//the first title we see in navigation bar
     extraBtns: [
       {
-        btnsTitle: "Support home", //the title we have for our btns
-        titleBtns:[],//btns under our title
+        title: "Support home", //the title we have for our btns
+        buttons:[],//btns under our title
       },
       {
-        btnsTitle: "Xbox status",
-        titleBtns: [],
+        title: "Xbox status",
+        buttons: [],
       },
       {
-        btnsTitle: "Help topics",
-        titleBtns: [
+        title: "Help topics",
+        buttons: [
           "Account & profile",
           "Subscriptions & billing",
           "Hardware & networking",
@@ -27,32 +27,32 @@ export const NavBtnsData= [
         
       },
       {
-        btnsTitle: "Accessible gaming",
-        titleBtns: [],
+        title: "Accessible gaming",
+        buttons: [],
       },
       {
-        btnsTitle: "Xbox system updates",
-        titleBtns: [],
+        title: "Xbox system updates",
+        buttons: [],
       },
     ],
     extraMenu:true
   },
   {
-    title: "More",
+    mainTitle: "More",
     extraBtns: [
       {
-        btnsTitle: "My Xbox",
-        titleBtns: ["Profile", "Rewards", "Xbox Mastercard", "Wish list"],
+        title: "My Xbox",
+        buttons: ["Profile", "Rewards", "Xbox Mastercard", "Wish list"],
       },
       {
-        btnsTitle: "Developers",
-        titleBtns: ["Games", "Designed for Xbox"],
+        title: "Developers",
+        buttons: ["Games", "Designed for Xbox"],
       },
     ],
     extraMenu:true
   },
   {
-    title: "Game Pass",
+    mainTitle: "Game Pass",
     btns: [
       "Join Game Pass",
       "Browse Games",
@@ -65,7 +65,7 @@ export const NavBtnsData= [
     large: false,
   },
   {
-    title: "Games",
+    mainTitle: "Games",
     btns: [
       "Games",
       "Games home",
@@ -79,11 +79,11 @@ export const NavBtnsData= [
     large: false,
   },
   {
-    title: "Devices",
+    mainTitle: "Devices",
     extraBtns: [
       {
-        btnsTitle: "Cosoles",
-        titleBtns: [
+        title: "Cosoles",
+        buttons: [
           "Xbox consoles",
           "Xbox Series X",
           "Xbox Series S",
@@ -94,8 +94,8 @@ export const NavBtnsData= [
         ],
       },
       {
-        btnsTitle: "Accessories",
-        titleBtns: [
+        title: "Accessories",
+        buttons: [
           "Shop all accessories,",
           "Design your controller",
           "Controller",
@@ -105,14 +105,14 @@ export const NavBtnsData= [
         ],
       },
       {
-        btnsTitle: "PC Devices",
-        titleBtns: ["Gaming PCs"],
+        title: "PC Devices",
+        buttons: ["Gaming PCs"],
       },
     ],
     large:true
   },
   {
-    title: "Store",
+    mainTitle: "Store",
     btns: [
       "Shop Games",
       "Shop Game Pass",
@@ -123,15 +123,15 @@ export const NavBtnsData= [
     large: false,
   },
   {
-    title: "Community",
+    mainTitle: "Community",
     extraBtns: [
       {
-        btnsTitle: "Community",
-        titleBtns: ["Xbox community", "FanFest", "Xbox News", "Sustainability"],
+        title: "Community",
+        buttons: ["Xbox community", "FanFest", "Xbox News", "Sustainability"],
       },
       {
-        btnsTitle: "For Everyone",
-        titleBtns: [
+        title: "For Everyone",
+        buttons: [
           "Our philosophy",
           "Family hub",
           "Accessible gaming",
@@ -139,12 +139,12 @@ export const NavBtnsData= [
         ],
       },
       {
-        btnsTitle: "Xbox Gear Shop",
-        titleBtns: ["Shop gear"],
+        title: "Xbox Gear Shop",
+        buttons: ["Shop gear"],
       },
       {
-        btnsTitle: "Apps & Entertainment",
-        titleBtns: [
+        title: "Apps & Entertainment",
+        buttons: [
           " Xbox app on mobile",
           " Xbox app on Windows PC",
           " Xbox app on TVs",
@@ -172,8 +172,8 @@ export const AllMicrosoft= [
     ],
     btns: [
       {
-        btnsTitle: "Software",
-        titleBtns: [
+        title: "Software",
+        buttons: [
           "Windows Apps",
           "AI",
           "Outlook",
@@ -185,8 +185,8 @@ export const AllMicrosoft= [
         ],
       },
       {
-        btnsTitle: "Pcs & Devices",
-        titleBtns: [
+        title: "Pcs & Devices",
+        buttons: [
           "Computers",
           "Shop Xbox",
           "Accessories",
@@ -196,8 +196,8 @@ export const AllMicrosoft= [
         ],
       },
       {
-        btnsTitle: "Entertainment",
-        titleBtns: [
+        title: "Entertainment",
+        buttons: [
           "Xbox Game Pass Ultimate",
           "PC Game Pass",
           "Xbox games",
@@ -206,8 +206,8 @@ export const AllMicrosoft= [
         ],
       },
       {
-        btnsTitle: "Business",
-        titleBtns: [
+        title: "Business",
+        buttons: [
           "Microsoft Cloud",
           "Microsoft Security",
           "Dynamics 365",
@@ -219,8 +219,8 @@ export const AllMicrosoft= [
         ],
       },
       {
-        btnsTitle: "Developer & IT",
-        titleBtns: [
+        title: "Developer & IT",
+        buttons: [
           "Azure",
           "Developer Center",
           "Documentation",
@@ -232,8 +232,8 @@ export const AllMicrosoft= [
         ],
       },
       {
-        btnsTitle: "Other",
-        titleBtns: [
+        title: "Other",
+        buttons: [
           "Microsoft Rewards",
           "Free downloads & security",
           "Education",
