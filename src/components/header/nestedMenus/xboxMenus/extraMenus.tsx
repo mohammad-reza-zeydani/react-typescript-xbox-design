@@ -1,11 +1,12 @@
 import { useState } from "react";
-const ExpandedMenus = ({ data }: any) => {
+import { TBtnObject } from "../../../types";
+const ExtraMenus = ({ data }:{data:TBtnObject}) => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
   return (
-    <div className='w-full'>
+    <>
       <button
         onClick={() => setOpenMenu(!openMenu)}
-        className='flex w-full justify-between px-5 py-3 focus:bg-neutral-200'>
+        className='btn'>
         <h1>{data.title}</h1>
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -19,15 +20,13 @@ const ExpandedMenus = ({ data }: any) => {
           />
         </svg>
       </button>
-      {openMenu ? (
-        <div className='flex w-full flex-col divide-y divide-neutral-200 pl-10 text-sm sm:text-base'>
-          {data.buttons.map((button: string) => {
-            return <a href="#" className="py-3 w-full active:bg-neutral-200">{button}</a>;
-          })}
-        </div>
-      ) : null}
-    </div>
+     {openMenu &&
+        data.buttons.map((b:string) => {
+          return <a href="#" className="py-3 text-xs sm:text-sm text-green-950 font-bold active:bg-neutral-200">{b}</a>;
+        })}
+     
+    </>
   );
 };
 
-export default ExpandedMenus;
+export default ExtraMenus;

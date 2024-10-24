@@ -1,6 +1,7 @@
 import xboxLogo from "../../assets/xboxLogo.png";
 import microsoftLogo from "../../assets/MicrosoftLogo.png";
 import headerPic from "../../assets/headerPic.jpg";
+import mobileHeaderPic from "../../assets/mobileHeader.jpg"
 //Data of the title and btns we have in our navigation 
 export const NavBtnsData= [
   {
@@ -249,4 +250,5 @@ export const Images = {
   xboxLogo,
   microsoftLogo,
   headerPic,
+  mobileHeaderPic
 };

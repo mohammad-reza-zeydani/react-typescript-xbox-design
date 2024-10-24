@@ -11,4 +11,10 @@
     .text-border {
         @apply group-hover/border:border-b border-black
     }
+    .btn {
+        @apply flex  w-full justify-between items-center focus:bg-neutral-200 py-3
+    }
+    .flex-divide {
+        @apply flex flex-col divide-y divide-neutral-200
+    }
 }
