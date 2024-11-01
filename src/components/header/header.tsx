@@ -14,175 +14,175 @@ const Header = () => {
   return (
     <header>
       {/* header mobile and tablet section */}
-      <section className="xl:hidden">
+      <section className='xl:hidden'>
         <nav>
-           {/* navigation main div */}
-        <div>
-          {/* if open searcg box is true show search input else show navBar main content */}
-          {openSearchBox ? (
-            <form className='flex items-center justify-center sm:gap-x-2 h-12  border-y-2 border-neutral-300'>
-              <svg
-                onClick={() => setOpenSearchBox(!openSearchBox)}
-                xmlns='http://www.w3.org/2000/svg'
-                fill='none'
-                viewBox='0 0 24 24'
-                strokeWidth={1.5}
-                stroke='currentColor'
-                className='size-12 p-3 sm:w1/2'>
-                <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  d='M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18'
-                />
-              </svg>
-              <input
-                type='text'
-                className='w-4/5 py-1 border border-black outline-none pl-3'
-                placeholder='Search Xbox.Com'
-              />
-              <img
-                className='w-24 hidden sm:block'
-                src={Images.microsoftLogo}
-                alt=''
-              />
-            </form>
-          ) : (
-            <>
-            {/* navBar main content div */}
-              <div className='flex w-full h-12 items-center justify-between bg-white px-1 sm:px-7 border-y-2 child:py-2 border-neutral-300'>
-                {/* navBar left contents */}
-                <div className='flex gap-x-4 sm:gap-x-8 child:cursor-pointer items-center child:text-zinc-500'>
-                  {/* if openNavBarMenu is false show open menu svg else show close btn */}
-                  {openNavBarMenu ? (
-                    <svg
-                      onClick={() => setOpenNavBarMenu(!openNavBarMenu)}
-                      xmlns='http://www.w3.org/2000/svg'
-                      fill='none'
-                      viewBox='0 0 24 24'
-                      strokeWidth={1.5}
-                      stroke='currentColor'
-                      className='size-7 sm:size-10'>
-                      <path
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        d='M6 18 18 6M6 6l12 12'
-                      />
-                    </svg>
-                  ) : (
-                    <svg
-                      onClick={() => setOpenNavBarMenu(!openNavBarMenu)}
-                      xmlns='http://www.w3.org/2000/svg'
-                      fill='none'
-                      viewBox='0 0 24 24'
-                      strokeWidth={1.5}
-                      stroke='currentColor'
-                      className='size-7 sm:size-10'>
-                      <path
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5'
-                      />
-                    </svg>
-                  )}
-                  {/* search svg */}
-                  <svg
-                    onClick={() => setOpenSearchBox(!openSearchBox)}
-                    xmlns='http://www.w3.org/2000/svg'
-                    viewBox='0 0 20 20'
-                    fill='currentColor'
-                    className='size-7 sm:size-10 rotate-90'>
-                    <path
-                      fillRule='evenodd'
-                      d='M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z'
-                      clipRule='evenodd'
-                    />
-                  </svg>
-                </div>
-                {/* navBar middle contents */}
-                <div>
-                {/* microsoftLogo */}
-                  <img
-                    className='w-24 sm:w-32 md:w-40'
-                    src={Images.microsoftLogo}
-                    alt=''
+          {/* navigation main div */}
+          <div>
+            {/* if open searcg box is true show search input else show navBar main content */}
+            {openSearchBox ? (
+              <form className='flex items-center justify-center sm:gap-x-2 h-12  border-y-2 border-neutral-300'>
+                <svg
+                  onClick={() => setOpenSearchBox(!openSearchBox)}
+                  xmlns='http://www.w3.org/2000/svg'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  strokeWidth={1.5}
+                  stroke='currentColor'
+                  className='size-12 p-3 sm:w1/2'>
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    d='M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18'
                   />
-                </div>
-                {/* navBar right contents */}
-                <div className='flex items-center gap-x-4 sm:gap-x-8 child:text-zinc-500'>
-                  {/* shop svg */}
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    fill='none'
-                    viewBox='0 0 24 24'
-                    strokeWidth={1.5}
-                    stroke='currentColor'
-                    className='size-7 sm:size-10'>
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      d='M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z'
-                    />
-                  </svg>
-                  {/* create account svg */}
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    fill='none'
-                    viewBox='0 0 24 24'
-                    strokeWidth={1.5}
-                    stroke='currentColor'
-                    className='size-6 sm:size-9'>
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      d='M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z'
-                    />
-                  </svg>
-                </div>
-              </div>
-            </>
-          )}
-          {/* if openNavBarMenu is false,xbox btn will be appeard to open another menu */}
-          {!openNavBarMenu && (
-            <button
-              onClick={() => setOpenXboxMenu(!openXboxMenu)}
-              className='px-1 sm:px-7 py-2 flex items-center gap-x-2'>
-              <img className='w-16 sm:w-24' src={Images.xboxLogo} alt='' />
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                fill='none'
-                viewBox='0 0 24 24'
-                strokeWidth={1.5}
-                stroke='currentColor'
-                className={`size-5 sm:size-7 text-green-950 ${
-                  openXboxMenu ? "rotate-180" : "rotate-0"
-                }`}>
-                <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  d='m19.5 8.25-7.5 7.5-7.5-7.5'
+                </svg>
+                <input
+                  type='text'
+                  className='w-4/5 py-1 border border-black outline-none pl-3'
+                  placeholder='Search Xbox.Com'
                 />
-              </svg>
-            </button>
-          )}
-        </div>
-        <div className='absolute w-full'>
-          {/* the list of the links inside navBar menu */}
-          {openNavBarMenu && <NavBarMenu data={AllMicrosoft} />}
-          {/* the list of the links inside XboxMenu */}
-          {openXboxMenu && (
-            <ul className='bg-neutral-100 text-black shadow-md border-b border-black flex-divide sm:text-lg'>
-              {NavBtnsData.map((data: TNavBtnsData) => {
-                return <XboxMenu data={data} />;
-              })}
-            </ul>
-          )}
-        </div>
-        {/* mobile header bg */}
-        <img className='md:hidden' src={Images.mobileHeaderPic} alt='' />
+                <img
+                  className='w-24 hidden sm:block'
+                  src={Images.microsoftLogo}
+                  alt=''
+                />
+              </form>
+            ) : (
+              <>
+                {/* navBar main content div */}
+                <div className='flex w-full h-12 items-center justify-between bg-white px-1 sm:px-7 border-y-2 child:py-2 border-neutral-300'>
+                  {/* navBar left contents */}
+                  <div className='flex gap-x-4 sm:gap-x-8 child:cursor-pointer items-center child:text-zinc-500'>
+                    {/* if openNavBarMenu is false show open menu svg else show close btn */}
+                    {openNavBarMenu ? (
+                      <svg
+                        onClick={() => setOpenNavBarMenu(!openNavBarMenu)}
+                        xmlns='http://www.w3.org/2000/svg'
+                        fill='none'
+                        viewBox='0 0 24 24'
+                        strokeWidth={1.5}
+                        stroke='currentColor'
+                        className='size-7 sm:size-10'>
+                        <path
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
+                          d='M6 18 18 6M6 6l12 12'
+                        />
+                      </svg>
+                    ) : (
+                      <svg
+                        onClick={() => setOpenNavBarMenu(!openNavBarMenu)}
+                        xmlns='http://www.w3.org/2000/svg'
+                        fill='none'
+                        viewBox='0 0 24 24'
+                        strokeWidth={1.5}
+                        stroke='currentColor'
+                        className='size-7 sm:size-10'>
+                        <path
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
+                          d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5'
+                        />
+                      </svg>
+                    )}
+                    {/* search svg */}
+                    <svg
+                      onClick={() => setOpenSearchBox(!openSearchBox)}
+                      xmlns='http://www.w3.org/2000/svg'
+                      viewBox='0 0 20 20'
+                      fill='currentColor'
+                      className='size-7 sm:size-10 rotate-90'>
+                      <path
+                        fillRule='evenodd'
+                        d='M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z'
+                        clipRule='evenodd'
+                      />
+                    </svg>
+                  </div>
+                  {/* navBar middle contents */}
+                  <div>
+                    {/* microsoftLogo */}
+                    <img
+                      className='w-24 sm:w-32 md:w-40'
+                      src={Images.microsoftLogo}
+                      alt=''
+                    />
+                  </div>
+                  {/* navBar right contents */}
+                  <div className='flex items-center gap-x-4 sm:gap-x-8 child:text-zinc-500'>
+                    {/* shop svg */}
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      fill='none'
+                      viewBox='0 0 24 24'
+                      strokeWidth={1.5}
+                      stroke='currentColor'
+                      className='size-7 sm:size-10'>
+                      <path
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        d='M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z'
+                      />
+                    </svg>
+                    {/* create account svg */}
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      fill='none'
+                      viewBox='0 0 24 24'
+                      strokeWidth={1.5}
+                      stroke='currentColor'
+                      className='size-6 sm:size-9'>
+                      <path
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        d='M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z'
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </>
+            )}
+            {/* if openNavBarMenu is false,xbox btn will be appeard to open another menu */}
+            {!openNavBarMenu && (
+              <button
+                onClick={() => setOpenXboxMenu(!openXboxMenu)}
+                className='px-1 sm:px-7 py-2 flex items-center gap-x-2'>
+                <img className='w-16 sm:w-24' src={Images.xboxLogo} alt='' />
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  strokeWidth={1.5}
+                  stroke='currentColor'
+                  className={`size-5 sm:size-7 text-green-950 ${
+                    openXboxMenu ? "rotate-180" : "rotate-0"
+                  }`}>
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    d='m19.5 8.25-7.5 7.5-7.5-7.5'
+                  />
+                </svg>
+              </button>
+            )}
+          </div>
+          <div className='absolute w-full z-50'>
+            {/* the list of the links inside navBar menu */}
+            {openNavBarMenu && <NavBarMenu data={AllMicrosoft} />}
+            {/* the list of the links inside XboxMenu */}
+            {openXboxMenu && (
+              <ul className='bg-neutral-100 text-black shadow-md border-b border-black flex-divide sm:text-lg'>
+                {NavBtnsData.map((data: TNavBtnsData) => {
+                  return <XboxMenu data={data} />;
+                })}
+              </ul>
+            )}
+          </div>
+          {/* mobile header bg */}
+          <img className='md:hidden' src={Images.mobileHeaderPic} alt='' />
         </nav>
       </section>
       {/* header desktop section */}
-      <section className="">
+      <section>
         <nav className='hidden xl:block'>
           {/* desktop header main dev */}
           <div className='flex relative justify-between px-20 bg-white'>
@@ -425,7 +425,7 @@ const Header = () => {
                                     {/* the buttons under each colum */}
                                     {b.buttons.map((b: string) => (
                                       <a
-                                        className='p-3 text-xs group/border border border-neutral-100 active:border-black border-dashed'
+                                        className='p-3 text-xs font-bold group/border border border-neutral-100 active:border-black border-dashed'
                                         href='#'>
                                         <span className='group-hover/border:border-b border-black'>
                                           {b}
@@ -522,7 +522,7 @@ const Header = () => {
         {/* desktop header image */}
         <div className='hidden md:block'>
           <img src={Images.headerPic} />
-          <h1 className=' text-5xl xl:text-6xl font-bold text-white text-center absolute left-0 right-0 top-28 xl:top-24'>
+          <h1 className='  text-5xl z-0 xl:text-6xl font-bold text-white text-center absolute left-0 right-0 top-28 xl:top-24'>
             Xbox One S
           </h1>
         </div>

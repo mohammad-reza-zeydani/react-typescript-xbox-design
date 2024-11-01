@@ -3,7 +3,7 @@ import { TBtnObject } from "../../../types";
 const ExpandedMenus = ({ data }:{data:TBtnObject}) => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
   return (
-    <div className='w-full'>
+    <div className='w-full bg-neutral-100'>
       <button
         onClick={() => setOpenMenu(!openMenu)}
         className='btn px-5'>

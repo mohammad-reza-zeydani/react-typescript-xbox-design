@@ -6,7 +6,7 @@ const ExtraMenus = ({ data }:{data:TBtnObject}) => {
     <>
       <button
         onClick={() => setOpenMenu(!openMenu)}
-        className='btn'>
+        className='btn  bg-neutral-100'>
         <h1>{data.title}</h1>
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -20,10 +20,12 @@ const ExtraMenus = ({ data }:{data:TBtnObject}) => {
           />
         </svg>
       </button>
-     {openMenu &&
+    <div className="flex-divide">
+    {openMenu &&
         data.buttons.map((b:string) => {
-          return <a href="#" className="py-3 text-xs sm:text-sm text-green-950 font-bold active:bg-neutral-200">{b}</a>;
+          return <a href="#" className="py-3 pl-5 text-xs sm:text-sm text-green-950 font-bold bg-neutral-100 w-full active:bg-neutral-200">{b}</a>;
         })}
+    </div>
      
     </>
   );
