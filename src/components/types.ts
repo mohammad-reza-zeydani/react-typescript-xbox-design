@@ -20,3 +20,7 @@ export type TBodyData = {
   svg?: string;
   button?:boolean
 };
+export type TFooterData ={
+  title:string,
+  buttons:Array<string>
+}
